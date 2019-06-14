@@ -3,21 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <title>Create New User</title>
+    <style type="text/css">
+        fieldset {
+            width: 75%;
+            border: 2px solid #cccccc;
+        }
+
+        label {
+            width: 150px;
+            float: left;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        input {
+            border: 1px solid #000;
+            padding: 3px;
+        }
+    </style>
 </head>
 <body>
 <h1>Create a new user</h1>
 <form action="createUser.php" method="post">
-<p>
-    First Name: <input name="firstName" type="text" size="20"> <br/>
-    Middle Initial (optional): <input name="middleName" type="text" size="20"><br/>
-    Last Name: <input name="lastName" type="text" size="20"><br/>
-    Street Address: <input name="address1" type="text" size="60"><br/>
-    City: <input name="city" type="text" size="20">
-    State: <input name="state" type="text" size="10">
-    ZipCode: <input name="zipCode" type="number" size="10"> <br />
-    Country: <input name="country" type="text" size="20">
-</p>
-<p><input type="submit" name="submit" value="Create User"></p>
+    <fieldset>
+        <p>
+            <label for="userRole">Role</label>
+            <input type="text" id="userRole" name="User Role"
+                   maxlength="30" size="30"/>
+        </p>
+        <p>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="First Name"
+                   maxlength="30" size="30"/>
+        </p>
+        <p>
+            <label for="middleName">Middle Name *</label>
+            <input type="text" id="middleName" name="Middle Name"
+                   maxlength="30" size="30"/>
+        </p>
+        <p>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="Last Name"
+                   maxlength="30" size="30"/>
+        </p>
+        <p>
+            <label for="userName">User Name</label>
+            <input type="text" id="userName" name="User Name"
+                   maxlength="30" size="30"/>
+        </p>
+
+        <p>
+            <label for="nickName">Nick Name *</label>
+            <input type="text" id="nickName" name="Nick Name"
+                   maxlength="30" size="30"/>
+        </p>
+        <p>
+            <label for="email1">Email</label>
+            <input type="text" id="email1" name="Email"
+                   maxlength="30" size="30"/>
+        </p>
+        <p>
+            <label for="email2">Alternate Email *</label>
+            <input type="text" id="email2" name="Alternate Email"
+                   maxlength="30" size="30"/>
+        </p>
+        <p>
+            <i> * fields are optional</i><br/>
+        </p>
+
+    </fieldset>
+
+    <fieldset>
+        <strong><h3>Optional Address Information</h3></strong>
+        <p>
+            <label for="address1">Address</label>
+            <input type="text" id="address1" name="Address1"
+                   maxlength="30" size="30"/>
+        </p>
+        <p>
+            <label for="address2">Address</label>
+            <input type="text" id="address2" name="Address2"
+                   maxlength="30" size="30"/>
+        </p>
+        <p>
+            <label for="city">City</label>
+            <input type="text" id="city" name="City"
+                   maxlength="30" size="30"/>
+        </p>
+        <p>
+            <label for="state">State</label>
+            <input type="text" id="state" name="State"
+                   maxlength="30" size="30"/>
+        </p>
+        <p>
+            <label for="zipCode">ZipCode</label>
+            <input type="number" id="zipCode" name="ZipCode"
+                   maxlength="30" size="30" />
+        </p>
+        <p>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="Country"
+                   maxlength="30" size="30"/>
+        </p>
+    </fieldset>
+    <p>
+        <input type="submit" name="submit" value="Create User">
+    </p>
 </form>
 </body>
 </html>

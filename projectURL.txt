@@ -5,3 +5,6 @@ https://bitbucket.org/mSievers82/cst126/pull-requests/1/milestone-1/diff
 
 Activity 2 PR URL
 https://bitbucket.org/mSievers82/cst126/pull-requests/2/activity-two/diff
+
+Milestone 2 PR url
+https://bitbucket.org/mSievers82/cst126/pull-requests/3/milestone-2-loginpage/diff

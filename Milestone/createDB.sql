@@ -54,4 +54,11 @@ create table _roles
 create unique index roles_roleName_uindex
     on _roles (roleName);
 
+-- creation of IP table for login attempt verification
+create table ip
+(
+    ip        char(16)                            not null,
+    timestamp timestamp default CURRENT_TIMESTAMP not null
+);
+
 

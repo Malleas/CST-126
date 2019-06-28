@@ -44,8 +44,7 @@ if($rowCount == 1){
     $loginAttempts = 0;
     //Check to see if password given matches, if not 3 attempts al given before error disallowing attempts.
     if(password_verify($password, $hash)){
-        sleep(1);
-        echo '<script>window.location = "blogHome.html"</script>';
+        include ('getContent.php');
     }else if($count[0] <= 3){
         echo "Login failed, please try again <br />";
         echo '<button onclick="window.location.href = \'login.html\'">Try Again</button>';

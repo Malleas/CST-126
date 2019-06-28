@@ -88,6 +88,7 @@ $query = "INSERT INTO user_info (userName, firstname, middleName, lastName, nick
 // execution of query with pass/fail msg.
 if (mysqli_query($db, $query)) {
     echo "New record created successfully";
+    header("Location: login.html");
 } else {
     echo "Error: " . $query . "<br>" . mysqli_error($db);
 }

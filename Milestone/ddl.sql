@@ -1,4 +1,4 @@
-create table posts
+create table if not exists posts
 (
     post_id      int auto_increment
         primary key,
@@ -7,7 +7,7 @@ create table posts
     post_date    datetime default CURRENT_TIMESTAMP not null
 );
 
-create table roles
+create table if not exists roles
 (
     roleId          int auto_increment
         primary key,
@@ -20,7 +20,7 @@ create table roles
     activeFlag      char      default 'y'               null
 );
 
-create table user_Info
+create table if not exists user_Info
 (
     userId          int auto_increment
         primary key,

@@ -6,7 +6,7 @@
 <body>
 <h1>New User Created Results</h1>
 <?php
-
+require_once ('database.php');
 //Creation of variables from POST
 $userName = $_POST['userName'];
 $firstName = $_POST['firstName'];
@@ -74,11 +74,7 @@ if (!isset($confirmPassword) || trim($confirmPassword) == '') {
 
 
 // connect to DB
-$db = new mysqli('localhost', 'testUser', 'cst126pass', 'cst126milestone');
-if (mysqli_connect_errno()) {
-    echo "<p>Error: Could not connect to database.<br/> Please try again later.</p>";
-    exit;
-}
+$conn = dbConnect();
 // Query to insert records from userRegistrationPage -> user_info table
 $query = "INSERT INTO user_info (userName, firstname, middleName, lastName, nickName, email1, email2, address1, 
                       address2, city, state, zipCode, country, password, confirmPassword) 
@@ -86,14 +82,15 @@ $query = "INSERT INTO user_info (userName, firstname, middleName, lastName, nick
                              '$address1', '$address2', '$city', '$state', '$zipCode', '$country', 
                              '$hashedPass', '$hashedConfirmPassword')";
 // execution of query with pass/fail msg.
-if (mysqli_query($db, $query)) {
+if (mysqli_query($conn, $query)) {
     echo "New record created successfully";
+    header("Location: login.html");
 } else {
-    echo "Error: " . $query . "<br>" . mysqli_error($db);
+    echo "Error: " . $query . "<br>" . mysqli_error($conn);
 }
 
 // close DB connection
-mysqli_close($db);
+mysqli_close($conn);
 
 ?>
 </body>

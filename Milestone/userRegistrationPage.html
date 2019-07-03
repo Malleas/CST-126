@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8">
-    <title>User Registration Page</title>
-    <style type="text/css">
-        fieldset {
-            width: 30%;
-            border: 2px solid #cccccc;
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
         }
-
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: white;
+        }
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f1f1f1;
+        }
         label {
             width: 150px;
             float: left;
@@ -17,15 +25,26 @@
         }
 
         input {
-            border: 1px solid #000;
-            padding: 3px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            resize: none;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-<h1>User Registration</h1>
-<form action="createUser.php" method="post">
-    <fieldset>
+<div class="header">
+    <h1>User Registration</h1> 
+</div>
+<div class="card">
+    <form action="createUser.php" method="post">
+
         <p>
             <label for="userName">User Name</label>
             <input type="text" id="userName" name="userName"
@@ -56,7 +75,7 @@
             <input type="text" id="lastName" name="lastName"
                    maxlength="30" size="30"/>
         </p>
-             <p>
+        <p>
             <label for="nickName">Nick Name *</label>
             <input type="text" id="nickName" name="nickName"
                    maxlength="30" size="30"/>
@@ -75,9 +94,6 @@
             <i> * fields are optional</i><br/>
         </p>
 
-    </fieldset>
-
-    <fieldset>
         <strong><h3>Optional Address Information</h3></strong>
         <p>
             <label for="address1">Address</label>
@@ -109,10 +125,11 @@
             <input type="text" id="country" name="country"
                    maxlength="30" size="30"/>
         </p>
-    </fieldset>
-    <p>
-        <input type="submit" name="submit" value="Create User">
-    </p>
-</form>
+        <p>
+            <input type="submit" name="submit" value="Create User">
+        </p>
+    </form>
+</div>
+
 </body>
 </html>

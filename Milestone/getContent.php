@@ -61,81 +61,59 @@
     </style>
 </head>
 <body>
-<?php
-//db connection
-$conn = new mysqli('localhost', 'testUser', 'cst126pass', 'cst126milestone');
-if (mysqli_connect_errno()) {
-    echo "<p>Error: Could not connect to database.<br/> Please try again later.</p>";
-    exit;
-}
-//DB Select posts
-$sql = "SELECT * FROM posts ORDER BY post_date DESC";
-$results = mysqli_query($conn, $sql) or die(mysqli_errno());
+<div class="header">
+    <h2>Ratchet Paint Studio</h2>
+</div>
+<div class="row">
+    <div class="leftcolumn">
+        <?php
+        require_once('utils.php');
+        $posts = getPosts();
+        for ($i = 0; $i < count($posts); $i++) {
+            ?>
 
-//logic to grab the top three rows in the posts DB to always display the top three posts based on date.
-if ($results->num_rows > 0) {
-    $row = $results->fetch_assoc();
-    $row2 = $results->fetch_assoc();
-    $row3 = $results->fetch_assoc();
-
-
-    ?>
-    <div class="header">
-        <h2>Ratchet Paint Studio</h2>
+            <div class="card">
+                <h2><?php echo $posts[$i][1] ?></h2>
+                <h5><?php echo $posts[$i][2] ?></h5>
+                <p><?php echo $posts[$i][3] ?> </p>
+            </div>
+            <?php
+        }
+        ?>
     </div>
-
-    <div class="row">
-        <div class="leftcolumn">
-            <div class="card">
-                <h2><?php echo $row['post_title'] ?></h2>
-                <h5><?php echo $row['post_date'] ?></h5>
-                <p><?php echo $row['post_content'] ?></p>
-            </div>
-            <div class="card">
-                <h2><?php echo $row2['post_title'] ?></h2>
-                <h5><?php echo $row2['post_date'] ?></h5>
-                <p><?php echo $row2['post_content'] ?></p>
-            </div> <div class="card">
-                <h2><?php echo $row3['post_title'] ?></h2>
-                <h5><?php echo $row3['post_date'] ?></h5>
-                <p><?php echo $row3['post_content'] ?></p>
-            </div>
+    <div class="rightColumn">
+        <div class="card">
+            <h2>About Me</h2>
+            <div class="fakeimg" style="height:200px;"></div>
+            <p>Some text about me and stuff</p>
         </div>
-        <div class="rightColumn">
-            <div class="card">
-                <h2>About Me</h2>
-                <div class="fakeimg" style="height:200px;"></div>
-                <p>Some text about me and stuff</p>
-            </div>
-            <div class="card">
-                <h3>Popular Posts</h3>
-                <h2><?php echo $row['post_title'] ?></h2>
-                <br>
-                <h2><?php echo $row2['post_title'] ?></h2>
-                <br>
-                <h2><?php echo $row3['post_title'] ?></h2>
-            </div>
-            <div class="card">
-                <button onclick="window.location.href = 'createPost.html'" style="width:100%;">New</button>
-            </div>
-            <div class="card" align="center">
-                <img src="images/facebook.png" height="100" width="100">
-                <img src="images/instagram.jpg" height="100" width="100">
-            </div>
+        <h3>Popular Posts</h3>
+        <div class="card">
+        <?php
+        for ($i = 0; $i < count($posts); $i++) {
+            ?>
+                <h2><?php echo $posts[$i][1] ?></h2><br>
+            <?php
+        }
+        ?>
+        </div>
+
+        <div class="card">
+            <button onclick="window.location.href = 'createPost.html'" style="width:100%;">New</button>
+        </div>
+        <div class="card">
+            <button onclick="window.location.href = 'admin.php'" style="width:100%;">Admin</button>
+        </div>
+        <div class="card" align="center">
+            <img src="images/facebook.png" height="100" width="100">
+            <img src="images/instagram.jpg" height="100" width="100">
         </div>
     </div>
+</div>
 
-    <div class="footer">
-        <h2>Footer</h2>
-    </div>
-    <?php
-
-
-} else {
-    echo "There are not posts to display";
-}
-$conn->close();
-?>
+<div class="footer">
+    <h2>Footer</h2>
+</div>
 
 
 </body>

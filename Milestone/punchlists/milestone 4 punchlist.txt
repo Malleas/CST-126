@@ -1,0 +1,40 @@
+Post Work Cleanup:
+create Database.php to house repeatable connection string to azure DB
+connect DB local connection to azure
+update createPosts, createUsers, getContent and loginHandler to use new dbConnect() function
+update the sytling to match blog page for login.html and userRegistrationPage.html.
+remove loginFailed.php, it is unused.
+remove homePage.html it is unused.
+
+New Features:
+Create getPosts() function, update getContent.php and new admin.php to use it.
+
+Update getPosts() to only display posts that have been accepted (1).
+
+Create getUnapprovedPosts().  Need this to query the DB for any posts that have an approved code of 0.
+
+Post Mgmt. create a page that displays all current posts that are both accepted == false and denied == null.
+each post should have an accept and denied btn.
+
+Update posts DB to include two new fields for accepted or denied posts, accepted defaults to false, denied is blank
+
+Admin console should have reject and accept buttons.
+
+reject - update field for post for denied row to true
+
+accept - update row to true and update denied to false.
+
+update getContent to check for the flag to be true to display posts.
+
+Bugs:
+Update login screen header.  Currently says User Registration, update to User Login.
+
+When logging in for the first time you were created with a "there are not posts to display" msg.  This was not ideal as
+it required you to navigate manually to createPost.html to have the blog actually display a new post.  updated
+getContent.php to redirect to createPost.html if there was nothing in the DB to display for the blog.  This should only
+happen if a new DB is build for the posts or it gets deleted.  after first post is made it will always display on the
+blog posts.
+
+New clean up
+Popular posts is looping but creating a new Popular post heading each time.  I'd like the posts to stay current in there
+without a heading for each one.

@@ -1,5 +1,5 @@
 <?php
-
+require_once ('database.php');
 //assign variables from POST
 $userName = $_POST['userName'];
 $password = $_POST['password'];
@@ -17,27 +17,22 @@ if (!isset($password) || trim($password) == '') {
 }
 
 //create DB Connection
-$dbConn = new mysqli('localhost', 'testUser', 'cst126pass', 'cst126milestone');
-if (mysqli_connect_errno()) {
-    echo "<p>Error: Could not connect to database.<br/> Please try again later.</p>";
-    exit;
-}
-
+$conn = dbConnect();
 
 //Query to use inputs from POST to see if the user exists and the password is correct.
 $loginQuery = "SELECT * FROM user_info WHERE userName = '$userName'";
-$results = $dbConn->query($loginQuery);
+$results = $conn->query($loginQuery);
 $rowCount = mysqli_num_rows($results);
 
 //capture IP for # of attempts.  ref @ https://stackoverflow.com/questions/37120328/how-to-limit-the-number-of-login-attempts-in-a-login-script
-mysqli_query($dbConn, "INSERT INTO ip (ip, timestamp) VALUES ('$ip', CURRENT_TIMESTAMP)");
-$result = mysqli_query($dbConn, "SELECT COUNT(*) FROM ip WHERE `ip` LIKE '$ip' AND `timestamp` > (now() - interval 10 minute)");
+mysqli_query($conn, "INSERT INTO ip (ip, timestamp) VALUES ('$ip', CURRENT_TIMESTAMP)");
+$result = mysqli_query($conn, "SELECT COUNT(*) FROM ip WHERE `ip` LIKE '$ip' AND `timestamp` > (now() - interval 10 minute)");
 $count = mysqli_fetch_array($result, MYSQLI_NUM);
 
 // Check to see if password given from POST is the password in the DB
 if($rowCount == 1){
     $queryPassword = "SELECT password from user_info WHERE userName = '$userName'";
-    $passwordResults = $dbConn->query($queryPassword);
+    $passwordResults = $conn->query($queryPassword);
     //change resource of results to a string value to validate password
     $row = mysqli_fetch_array($passwordResults, MYSQLI_ASSOC);
     $hash = $row['password'];
@@ -54,6 +49,6 @@ if($rowCount == 1){
 }
 
 //close DB connection
-mysqli_close($dbConn);
+mysqli_close($conn);
 
 

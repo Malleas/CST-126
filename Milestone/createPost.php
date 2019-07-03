@@ -1,4 +1,5 @@
 <?php
+require_once ('database.php');
 // Setting variables needed
 $title = $_POST['title'];
 $content = $_POST['content'];
@@ -26,11 +27,7 @@ if(!empty($intersect)){
 
 
 //db connection
-$conn = new mysqli('localhost', 'testUser', 'cst126pass', 'cst126milestone');
-if (mysqli_connect_errno()) {
-    echo "<p>Error: Could not connect to database.<br/> Please try again later.</p>";
-    exit;
-}
+$conn = dbConnect();
 $sql = ("INSERT into posts (post_title, post_content) VALUES ('$title', '$content')");
 
 

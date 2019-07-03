@@ -1,5 +1,6 @@
 Bitbutcket main: https://bitbucket.org/mSievers82/cst126/
-Azure: https://cst126activities.azurewebsites.net/index.html
+Azure Activities URL: https://cst126activities.azurewebsites.net/index.html
+Azure Milestone URL: https://cst126milestone.azurewebsites.net
 
 MS 1 Pull Request
 https://bitbucket.org/mSievers82/cst126/pull-requests/1/milestone-1/diff
@@ -18,3 +19,6 @@ https://bitbucket.org/mSievers82/cst126/pull-requests/5/milestone3/diff
 
 Activity 3 URL
 https://bitbucket.org/mSievers82/cst126/pull-requests/5/milestone3/diff
+
+Activity 4/Milestone 4 URL
+https://bitbucket.org/mSievers82/cst126/pull-requests/5/milestone3-and-4-and-activity-4/diff

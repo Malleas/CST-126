@@ -11,19 +11,6 @@ create table posts
     post_denied varchar(10) null
 );
 
-create table roles
-(
-    roleId int auto_increment
-        primary key,
-    roleName char(50) not null,
-    roleDescription varchar(255) not null,
-    createdDate timestamp default CURRENT_TIMESTAMP null,
-    createdBy int null,
-    updatedDate timestamp default CURRENT_TIMESTAMP null,
-    updatedBy int null,
-    activeFlag char default 'y' null
-);
-
 create table user_info
 (
     userId int auto_increment
@@ -45,6 +32,7 @@ create table user_info
     userDeleted char default 'n' null,
     password varchar(255) not null,
     confirmPassword varchar(255) not null,
+    roleName char(50) default 'Spectator' not null,
     constraint userInfo_email1_uindex
         unique (email1),
     constraint userInfo_userName_uindex

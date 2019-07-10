@@ -67,7 +67,12 @@
 <div class="row">
     <div class="leftcolumn">
         <?php
+        session_start();
+        $userName = $_SESSION['userName'];
+        $id = $_SESSION['userId'];
         require_once('utils.php');
+        require_once('database.php');
+        $conn = dbConnect();
         $posts = getPosts();
         for ($i = 0; $i < count($posts); $i++) {
             ?>
@@ -89,21 +94,42 @@
         </div>
         <h3>Popular Posts</h3>
         <div class="card">
-        <?php
-        for ($i = 0; $i < count($posts); $i++) {
-            ?>
-                <h2><?php echo $posts[$i][1] ?></h2><br>
             <?php
-        }
-        ?>
+            for ($i = 0; $i < count($posts); $i++) {
+                ?>
+                <h2><?php echo $posts[$i][1] ?></h2><br>
+                <?php
+            }
+            ?>
         </div>
 
-        <div class="card">
-            <button onclick="window.location.href = 'createPost.html'" style="width:100%;">New</button>
-        </div>
-        <div class="card">
-            <button onclick="window.location.href = 'admin.php'" style="width:100%;">Admin</button>
-        </div>
+<!--Filtering buttons based on user role. -->
+        <?php
+        $sql = "select cst126milestone.user_info.roleName from cst126milestone.user_info where userId = '$id'";
+        $results = mysqli_query($conn, $sql) or die (mysqli_error());
+        if ($results->num_rows > 0) {
+            while ($row = $results->fetch_assoc()) {
+                if ($row['roleName'] == 'Admin') {
+                    ?>
+                    <div class="card">
+                        <button onclick="window.location.href = 'createPost.html'" style="width:100%;">New</button>
+                    </div>
+                    <div class="card">
+                        <button onclick="window.location.href = 'admin.php'" style="width:100%;">Admin</button>
+                    </div>
+                    <?php
+                } else if ($row['roleName'] == 'Blogger') {
+                    ?>
+                    <div class="card">
+                        <button onclick="window.location.href = 'createPost.html'" style="width:100%;">New</button>
+                    </div>
+                    <?php
+                }
+            }
+
+        }
+        ?>
+
         <div class="card" align="center">
             <img src="images/facebook.png" height="100" width="100">
             <img src="images/instagram.jpg" height="100" width="100">

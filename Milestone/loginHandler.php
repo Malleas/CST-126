@@ -1,5 +1,6 @@
 <?php
 require_once ('database.php');
+session_start();
 //assign variables from POST
 $userName = $_POST['userName'];
 $password = $_POST['password'];
@@ -31,7 +32,7 @@ $count = mysqli_fetch_array($result, MYSQLI_NUM);
 
 // Check to see if password given from POST is the password in the DB
 if($rowCount == 1){
-    $queryPassword = "SELECT password from user_info WHERE userName = '$userName'";
+    $queryPassword = "SELECT password, userId from user_info WHERE userName = '$userName'";
     $passwordResults = $conn->query($queryPassword);
     //change resource of results to a string value to validate password
     $row = mysqli_fetch_array($passwordResults, MYSQLI_ASSOC);
@@ -39,6 +40,8 @@ if($rowCount == 1){
     $loginAttempts = 0;
     //Check to see if password given matches, if not 3 attempts al given before error disallowing attempts.
     if(password_verify($password, $hash)){
+        $_SESSION['userId'] = $row['userId'];
+        $_SESSION['userName'] =$userName;
         include ('getContent.php');
     }else if($count[0] <= 3){
         echo "Login failed, please try again <br />";

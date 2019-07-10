@@ -1,6 +1,17 @@
-Need to define roles
-1.  Admin - super user, should be able to approve, deny posts as well as any and all post manipulation needed (CRUD).
-2.  Blogger - create posts, update their own post.  Reply to posts
+Create new Admin Panel.(add to admin btn page?  add a new column to the form?)
+1.  should only be viewable by admin level
+2.  Admin should be able to approve or delete users.  Deleting users needs to update users table userDeleted to "Y"
+3.  Admin can ban users.  Update users table for userBanned to "Y".  User can still view posts but has removed ability
+to post (or comment...may be added later).
+4.  Add new pages for the admin panel for searchUsers.
+5.  Add new pages for the admin panel for updateUser.
+6.  Add new pages for the admin panel for deleteUser.
+7.  Add new pages for the admin panel for addUser.  This should redirect back to userRegistrationPage.html.
+8.  Update getAllUsers() to only bring back users that have the flag for userDelete = 'n'
+9.  Add functionality to check role name and only display admin button on getContent.php if role = admin
+10.  Add a button to the admin pannel to go back to blog home (getContent.php).
+11.  Add additional if clause to button viewing to only display "New" if role = blogger.  All buttons should be hidden
+if not one of the two roles.
 
 
 Bugs / improvements:

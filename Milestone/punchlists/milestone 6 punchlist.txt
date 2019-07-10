@@ -1,0 +1,27 @@
+Key objectives:
+Add ability to update and delete posts based on role
+add metrics page to admin panel.
+
+Post mgmt:
+1.  Add update and delete btns to posts, Delete should only be visible by admin, update visible to both admin and blogger.
+2.  Delete just removes the blog from the posts DB
+3.  Update opens new page.  post_content should be displayed in a textarea and be able to edit the text.  new updates
+should update the post_content.
+4.  Add new column to posts for updated_date, when a post is updated, this field should be updated instead of post_date.
+5.  Update post_date to created_date.
+
+Admin panel
+1.  Add new button for metrics
+2.  Display current user qty
+3.  Posts per day / month
+4.  DB Data stored size.
+
+Utils
+1.  create new gets for getting specific data for metrics on admin panel
+
+Bug fixes / improvements
+1.  Update admin.php.  When approving or denying with multiple posts, it would deny or approve all.  Solved this by
+adding a input hidden to capture the ID on the post action.  Also learned to wrap each form input as needed.
+2.  Update getContent.php with the same issue as the admin page.  update or deleting posts was affeting them all.  Needed
+to pull the logic up and have a <form> wrap each button action.  updated to capture the ID as well.  This way when calling
+updatePost.php the id was already in a $_POST variable that i could reuse.

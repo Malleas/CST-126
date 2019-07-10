@@ -65,27 +65,91 @@
     <h2>Ratchet Paint Studio</h2>
 </div>
 <div class="row">
+    <?php
+    session_start();
+    $userName = $_SESSION['userName'];
+    $id = $_SESSION['userId'];
+    require_once('utils.php');
+    require_once('database.php');
+    $conn = dbConnect();
+    if (isset($_POST['action'])) {
+        if ($_POST['action'] == 'Update') {
+            if (isset($_POST['id'])) {
+                header("Location:updatePost.php");
+                exit;
+            }else{
+                echo "No post id set.";
+            }
+        } elseif ($_POST['action'] == 'Delete') {
+            if (isset($_POST['id'])) {
+                $deleteId = $_POST['id'];
+                $sql = "delete from cst126milestone.posts where cst126milestone.posts.post_id = '$deleteId'";
+                mysqli_query($conn, $sql) or die(mysqli_error());
+                header("Refresh:0");
+                exit;
+
+            } else {
+
+                echo "No post ID Set";
+            }
+        }
+
+    } else {
+        //additional error handling if needed.
+
+    }
+
+    ?>
+
+
     <div class="leftcolumn">
         <?php
-        session_start();
-        $userName = $_SESSION['userName'];
-        $id = $_SESSION['userId'];
-        require_once('utils.php');
-        require_once('database.php');
-        $conn = dbConnect();
         $posts = getPosts();
         for ($i = 0; $i < count($posts); $i++) {
+            $postId = $posts[$i][0];
             ?>
 
             <div class="card">
                 <h2><?php echo $posts[$i][1] ?></h2>
                 <h5><?php echo $posts[$i][2] ?></h5>
                 <p><?php echo $posts[$i][3] ?> </p>
+                <?php
+                $sql = "select cst126milestone.user_info.roleName from cst126milestone.user_info where userId = '$id'";
+                $results = mysqli_query($conn, $sql) or die (mysqli_error());
+                if ($results->num_rows > 0) {
+                    while ($row = $results->fetch_assoc()) {
+                        if ($row['roleName'] == 'Admin') {
+                            ?>
+                            <form method="post" action="updatePost.php"style="display: inline-block">
+                                <input type="hidden" name="id" value="<?php print $postId ?>">
+                                <input type="submit" id='Update' value="Update" name="action" class="Update"/>
+                            </form>
+                            <form method="post" action=""style="display: inline-block">
+                                <input type="hidden" name="id" value="<?php print $postId ?>">
+                                <input type="submit" id='Delete' value="Delete" name="action" class="Delete"/>
+                            </form>
+
+
+                            <?php
+                        } else if ($row['roleName'] == 'Blogger') {
+                            ?>
+                            <form method="post" action="https://cst126milestone.azurewebsites.net/updatePost.php">
+                                <input type="hidden" name="id" value="<?php print $postId ?>">
+                                <input type="submit" id='Update' value="Update" name="action" class="Update"/>
+                            </form>
+                            <?php
+                        }
+                    }
+
+                }
+                ?>
             </div>
             <?php
         }
         ?>
     </div>
+
+
     <div class="rightColumn">
         <div class="card">
             <h2>About Me</h2>
@@ -103,7 +167,7 @@
             ?>
         </div>
 
-<!--Filtering buttons based on user role. -->
+        <!--Filtering buttons based on user role. -->
         <?php
         $sql = "select cst126milestone.user_info.roleName from cst126milestone.user_info where userId = '$id'";
         $results = mysqli_query($conn, $sql) or die (mysqli_error());

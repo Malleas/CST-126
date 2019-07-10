@@ -42,7 +42,8 @@ if($rowCount == 1){
     if(password_verify($password, $hash)){
         $_SESSION['userId'] = $row['userId'];
         $_SESSION['userName'] =$userName;
-        include ('getContent.php');
+        header("Location:getContent.php");
+        exit;
     }else if($count[0] <= 3){
         echo "Login failed, please try again <br />";
         echo '<button onclick="window.location.href = \'login.html\'">Try Again</button>';

@@ -1,0 +1,31 @@
+Key objectives:
+1.  Add search capability to blog to allow users to search current blog posts
+
+getContent.php
+1.  Add search text box
+2.  Add search button (wrap the button with a form to search DB)
+3.  Search DB title first for any '%search%'
+4.  Search post_content for the same search param
+5.  Form should open a new "searchResults.php" and display the results
+Optional
+1.  Display and sort results based on where search criteria was met.  IE display all searches that containe the criteria
+in the title together and all the posts that contain it in the content together.
+
+Roles stipulation:
+1.  All users should have the ability to search and read content.
+
+Additional functionality:
+- Add a automated email to inform a user of an rule infraction-
+1.  Create a new user using an actual email (use GCU email).
+2.  Add new btn to admin page to run the rule.
+3.  Rule should look at posts based qty of posts.  If posts is less than 2, email user to ask them to post again.
+4.  If no users found, echo results "rule ran, no users found out of compliance."
+5.  Create new file for btn to go to complianceResults.php.
+6.  Updates needed to post table to include author name(user name).
+
+
+
+Bugs/Refactors
+1.  The admin panel buttons should not show their own button on their page, remove said buttons.
+2.  With the addition of pushing the user name to createPosts, need to update it to just a php file and drop the html only file.
+3.  Move the repeatable functions our from createPost.php to utils for checkProhibitedWords and createPost

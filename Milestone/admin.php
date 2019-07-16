@@ -78,6 +78,11 @@ require_once('utils.php');
             <button onclick="window.location.href = 'getContent.php'" style="width:100%;">Blog Home</button>
         </div>
         <div class="card">
+            <button onclick="window.location.href = 'complianceResults.php'" style="width:100%;">Compliance Check
+            </button>
+        </div>
+
+        <div class="card">
             <h2>Blog Metrics</h2>
             <?php
             $totalUsers = getUserCount();
@@ -106,7 +111,9 @@ require_once('utils.php');
         </div>
     </div>
     <?php
-
+    session_start();
+    $id = $_SESSION['id'];
+    $userName = $_SESSION['userName'];
     $conn = dbConnect();
     $posts = getUnapprovedPosts();
     if (isset($_POST['action'])) {

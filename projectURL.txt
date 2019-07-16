@@ -34,3 +34,7 @@ https://bitbucket.org/mSievers82/cst126/pull-requests/9/milestone-6/diff
 
 Activity 6 URL
 https://bitbucket.org/mSievers82/cst126/pull-requests/11/activity6/diff
+
+Milestone 7 URL
+https://bitbucket.org/mSievers82/cst126/pull-requests/new?source=Milestone7&t=1
+

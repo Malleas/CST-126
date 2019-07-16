@@ -1,16 +1,5 @@
 create schema cst126milestone collate utf8_general_ci;
 
-create table posts
-(
-    post_id int auto_increment
-        primary key,
-    post_title varchar(255) not null,
-    post_content longtext not null,
-    post_date datetime default CURRENT_TIMESTAMP not null,
-    post_accepted tinyint(1) default 0 null,
-    post_denied varchar(10) null
-);
-
 create table user_info
 (
     userId int auto_increment
@@ -33,9 +22,24 @@ create table user_info
     password varchar(255) not null,
     confirmPassword varchar(255) not null,
     roleName char(50) default 'Spectator' not null,
-    constraint userInfo_email1_uindex
+    constraint user_info_email1_uindex
         unique (email1),
-    constraint userInfo_userName_uindex
+    constraint user_info_userName_uindex
         unique (userName)
+);
+
+create table posts
+(
+    post_id int auto_increment
+        primary key,
+    post_title varchar(255) not null,
+    post_content longtext not null,
+    post_date datetime default CURRENT_TIMESTAMP not null,
+    post_accepted tinyint(1) default 0 null,
+    post_denied varchar(10) null,
+    post_author char(50) null,
+    constraint posts_user_info_userName_fk
+        foreign key (post_author) references user_info (userName)
+            on update cascade on delete set null
 );
 

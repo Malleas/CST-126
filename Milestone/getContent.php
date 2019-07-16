@@ -58,6 +58,13 @@
             margin-top: 20px;
         }
 
+        label {
+            width: 200px;
+            float: left;
+            text-align: left;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -120,11 +127,11 @@
                     while ($row = $results->fetch_assoc()) {
                         if ($row['roleName'] == 'Admin') {
                             ?>
-                            <form method="post" action="updatePost.php"style="display: inline-block">
+                            <form method="post" action="updatePost.php" style="display: inline-block">
                                 <input type="hidden" name="id" value="<?php print $postId ?>">
                                 <input type="submit" id='Update' value="Update" name="action" class="Update"/>
                             </form>
-                            <form method="post" action=""style="display: inline-block">
+                            <form method="post" action="" style="display: inline-block">
                                 <input type="hidden" name="id" value="<?php print $postId ?>">
                                 <input type="submit" id='Delete' value="Delete" name="action" class="Delete"/>
                             </form>
@@ -152,6 +159,15 @@
 
     <div class="rightColumn">
         <div class="card">
+            <form action="searchResults.php" method="post" style="display: inline-block">
+                <p>
+                    <label for="searchBox"></label>
+                    <input type="text" id="searchBox" name="searchBox" style="width:75%;"/>
+                    <input type="submit" name="submit" value="Search">
+                </p>
+            </form>
+        </div>
+        <div class="card">
             <h2>About Me</h2>
             <div class="fakeimg" style="height:200px;"></div>
             <p>Some text about me and stuff</p>
@@ -174,9 +190,11 @@
         if ($results->num_rows > 0) {
             while ($row = $results->fetch_assoc()) {
                 if ($row['roleName'] == 'Admin') {
+                    $_SESSION['id'] = $id;
+                    $_SESSION['userName'] = $userName;
                     ?>
                     <div class="card">
-                        <button onclick="window.location.href = 'createPost.html'" style="width:100%;">New</button>
+                        <button onclick="window.location.href = 'createPost.php'" style="width:100%;">New</button>
                     </div>
                     <div class="card">
                         <button onclick="window.location.href = 'admin.php'" style="width:100%;">Admin</button>

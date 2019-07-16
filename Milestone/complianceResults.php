@@ -1,3 +1,4 @@
+
 <!--reference for blog template found @ https://www.w3schools.com/howto/howto_css_blog_layout.asp-->
 <!--reference for tabbed header found @ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tab_header -->
 <!DOCTYPE html>
@@ -59,7 +60,9 @@
 <div class="row">
     <div class="row">
         <div class="rightColumn">
-
+            <div class="card">
+                <button onclick="window.location.href = 'searchUsers.php'" style="width:100%;">Search Users</button>
+            </div>
             <div class="card">
                 <button onclick="window.location.href = 'updateUser.php'" style="width:100%;">Update User</button>
             </div>
@@ -72,46 +75,25 @@
             <div class="card">
                 <button onclick="window.location.href = 'getContent.php'" style="width:100%;">Blog Home</button>
             </div>
-            <div class="card">
-                <button onclick="window.location.href = 'complianceResults.php'" style="width:100%;">Compliance Check
-                </button>
-            </div>
         </div>
-    <div class="leftcolumn">
-        <div class="card">
-            <form action="" method="POST">
-                <?php
-                require_once('database.php');
-                require_once('utils.php');
-                $conn = dbConnect();
-                $users = getAllUsers();
-                for ($i = 0; $i < count($users); $i++) {
+        <div class="leftcolumn">
+            <div class="card">
+                <form action="" method="post">
+                    <?php
+                    session_start();
+                    require_once('utils.php');
+                    if (isset($_POST['post'])){
+                        $userName = $_SESSION['userName'];
+                        runComplianceCheck($userName);
+                        }
                     ?>
 
-                    <table id="userTable">
-                        <tr>
-                            <th>ID</th>
-                            <th>User Name</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Role</th>
-                        </tr>
-                        <tr>
-                            <td><?php echo $users[$i][0] ?></td>
-                            <td><?php echo $users[$i][1] ?></td>
-                            <td><?php echo $users[$i][2] ?></td>
-                            <td><?php echo $users[$i][3] ?></td>
-                            <td><?php echo $users[$i][4] ?></td>
-                        </tr>
-                    </table>
+                    <input name="post" type="submit" value="Check Compliance">
+                </form>
 
-                    <?php
-                }
-                ?>
-            </form>
+            </div>
         </div>
     </div>
-</div>
 
 </body>
 

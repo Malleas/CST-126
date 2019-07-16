@@ -63,9 +63,6 @@
                 <button onclick="window.location.href = 'searchUsers.php'" style="width:100%;">Search Users</button>
             </div>
             <div class="card">
-                <button onclick="window.location.href = 'updateUser.php'" style="width:100%;">Update User</button>
-            </div>
-            <div class="card">
                 <button onclick="window.location.href = 'deleteUser.php'" style="width:100%;">Delete User</button>
             </div>
             <div class="card">
@@ -73,6 +70,10 @@
             </div>
             <div class="card">
                 <button onclick="window.location.href = 'getContent.php'" style="width:100%;">Blog Home</button>
+            </div>
+            <div class="card">
+                <button onclick="window.location.href = 'complianceResults.php'" style="width:100%;">Compliance Check
+                </button>
             </div>
         </div>
         <div class="leftcolumn">

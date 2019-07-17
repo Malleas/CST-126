@@ -1,0 +1,47 @@
+Key objectives:
+1.  Add the ability to rate a post
+2.  Add the ability to comment on a post.
+3.  Update popular posts to show top 10.
+
+Update getContent.php
+1.  Add comment btn to take user to the comment.php new form
+2.  Comments should now appear below the post they belong to.
+3.  Add some sort of numerical rating 1-5 (stars maybe)
+4.  Add viewComments.php
+5.  Add new btn to view comments, btn value should contain the current comment count for that post.
+6.  Display avg rate number on post.
+7.  update pop posts to display the highest rated posts.
+
+update posts table
+1.  Add FK for postId to postId in comment.
+2.  update post_rate to be a float for new avg rate.
+
+Create comment table
+1.  add new post_comments_content to table
+2.  add new post_rating and do an average of rates.
+3.  add comment date/time
+
+
+Utils
+1.  update getPosts to also now return comments as part of the array.
+2.  addComment() to update a post with the comment content.
+3.  getComments() - retrieve all comments.
+4.  getCommentsCount = retrieve comment count to display on view comments button on getContent.php
+5.  update updateRate to now update the rate table
+6.  update getRate to get avg of rates from teh rate table
+7.  Create getHighestRatedPosts() to get the posts with the highest rating to display them for popular posts.
+
+comments.php
+1.  Create new page to allow user to post similar to the rest (update and create).
+2.  Title is not needed.
+3.  Post should be posted to the comments table with a reference to the originalPostId.
+
+viewComments.php
+1.  Filter and sort the comments based on original PostId.  Display this similar to admin page to approve posts.
+2.  Add original post to header for reference
+3.  Add blog home btn to return to home page.
+
+Create rate table
+1.  Should have originalPostId (FK), date, rate, ID(PK)
+2.  Use this table to get an avg of the rates by postId and update the rate in posts to be that avg amount.
+

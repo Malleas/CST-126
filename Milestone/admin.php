@@ -1,5 +1,4 @@
 <!--reference for blog template found @ https://www.w3schools.com/howto/howto_css_blog_layout.asp-->
-<!--reference for tabbed header found @ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tab_header -->
 <?php
 require_once('database.php');
 require_once('utils.php');

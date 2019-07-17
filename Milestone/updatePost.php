@@ -58,7 +58,6 @@
         $updatedTitle = $_POST['title'];
         $updatedContent = $_POST['content'];
         $updateSql = "update posts set post_title = '$updatedTitle', cst126milestone.posts.post_content = '$updatedContent' where cst126milestone.posts.post_id = '$postId'";
-        print $updateSql;
         mysqli_query($conn, $updateSql) or die (mysqli_error());
         header("Location:getContent.php");
         exit;

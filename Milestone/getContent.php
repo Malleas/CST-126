@@ -212,6 +212,7 @@
                             <?php
                         } else if ($row['roleName'] == 'Blogger') {
                             ?>
+                            <h5>Post Rating:<?php echo " " . $rate ?></h5>
                             <form method="post" action="updatePost.php" style="display: inline-block">
                                 <input type="hidden" name="id" value="<?php print $postId ?>">
                                 <input type="submit" id='Update' value="Update" name="action" class="Update"/>
@@ -219,6 +220,11 @@
                             <form method="post" action="comment.php" style="display: inline-block">
                                 <input type="hidden" name="id" value="<?php print $postId ?>">
                                 <input type="submit" id='Comment' value="Comment" name="action" class="Comment"/>
+                            </form>
+                            <form method="post" action="viewComments.php" style="display: inline-block">
+                                <input type="hidden" name="id" value="<?php print $postId ?>">
+                                <input type="submit" align="left" id='View'
+                                       value="View Comments<?php echo "($commentCount)" ?>" name="action" class="View"/>
                             </form>
                             <form action="" method="post">
                                 <input type="hidden" name="id" value="<?php print $postId ?>">

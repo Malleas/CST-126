@@ -41,3 +41,9 @@ https://bitbucket.org/mSievers82/cst126/pull-requests/new?source=Milestone7&t=1
 Milestone 8 URL
 https://bitbucket.org/mSievers82/cst126/pull-requests/new?source=milestone8&t=1
 
+Milestone 8 fix URL
+https://bitbucket.org/mSievers82/cst126/pull-requests/14/blogger-role-update-getcontent/diff
+
+Activity 7 URL
+https://bitbucket.org/mSievers82/cst126/pull-requests/15/activity-7-commit/diff
+

@@ -305,7 +305,6 @@ reference for blog template found @ https://www.w3schools.com/howto/howto_css_bl
                         <button onclick="window.location.href = 'login.html'" style="width:100%;">Log
                             Out
                         </button>
-                        <?php session_destroy() ?>
                     </div>
                     <?php
                 } else if ($row['roleName'] == 'Blogger') {
@@ -326,7 +325,6 @@ reference for blog template found @ https://www.w3schools.com/howto/howto_css_bl
                         <button onclick="window.location.href = 'login.html'" style="width:100%;">Log
                             Out
                         </button>
-                        <?php session_destroy() ?>
                     </div>
                     <?php
                 }

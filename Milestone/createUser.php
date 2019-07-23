@@ -1,3 +1,9 @@
+<!--
+All files authored by Matt Sievers
+Date update 07/22/19
+createUser.php
+CST-126/Milestone
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,12 +34,7 @@ $lowercase = preg_match('@[a-z]@', $password);
 $number    = preg_match('@[0-9]@', $password);
 
 //check to make sure password meets requirements  reference https://codereview.stackexchange.com/questions/173831/user-id-password-constraints-checker
-if(!$uppercase || !$lowercase || !$number || !ctype_alnum($password) || strlen($password) < 8) {
-    echo "The password must contain at least 1 lowercase letter, 1 uppercase letter and 1 number.<br />";
-    echo "The password can't contain special symbols.<br />>";
-    echo '<button onclick="window.location.href = \'userRegistrationPage.html\'">Try Again</button>';
-    exit;
-}
+
 
 //Create a hash for password
 $hashedPass = password_hash($password, PASSWORD_DEFAULT);
@@ -42,33 +43,32 @@ $hashedConfirmPassword = password_hash($confirmPassword, PASSWORD_DEFAULT);
 // Check to see if passwords match as typed
 if(password_verify($hashedConfirmPassword, $hashedPass)){
     echo "Passwords do not match, please ensure that the passwords are correct.<br />";
-    exit;
 }
 //check to see if nick name is set, if not set it to firstName+lastName
 if (empty($nickName)) $nickName = $firstName . $lastName;
 //check to see that required fields are not left blank.
 if (!isset($firstName) || trim($firstName) == '') {
     echo "First Name is required, please try again.<br />";
-    exit;
 }
 if (!isset($lastName) || trim($lastName) == '') {
     echo "Last Name is required, please try again.<br />";
-    exit;
 }
 if (!isset($userName) || trim($userName) == '') {
     echo "User Name is required, please try again.<br />";
-    exit;
 }
 if (!isset($email1) || trim($email1) == '') {
     echo "Email is required, please try again.<br />";
-    exit;
 }
 if (!isset($password) || trim($password) == '') {
     echo "Password is required, please try again.<br />";
-    exit;
 }
 if (!isset($confirmPassword) || trim($confirmPassword) == '') {
     echo "Password confirmation required, please confirm password.<br />";
+}
+if(!$uppercase || !$lowercase || !$number || !ctype_alnum($password) || strlen($password) < 8) {
+    echo "The password must contain at least 1 lowercase letter, 1 uppercase letter and 1 number.<br />";
+    echo "The password can't contain special symbols.<br />>";
+    echo '<button onclick="window.location.href = \'userRegistrationPage.html\'">Try Again</button>';
     exit;
 }
 

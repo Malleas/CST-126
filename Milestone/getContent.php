@@ -1,4 +1,10 @@
-<!--reference for blog template found @ https://www.w3schools.com/howto/howto_css_blog_layout.asp-->
+<!--
+All files authored by Matt Sievers
+Date update 07/22/19
+getContent.php
+CST-126/Milestone
+reference for blog template found @ https://www.w3schools.com/howto/howto_css_blog_layout.asp
+-->
 
 <!DOCTYPE html>
 <html>
@@ -158,7 +164,6 @@
     <div class="leftcolumn">
         <?php
         $posts = getPosts();
-        print $data['avg'];
         for ($i = 0; $i < count($posts); $i++) {
             $postId = $posts[$i][0];
             $commentCount = getCommentCount($postId);
@@ -273,7 +278,7 @@
             $popPost = getHighestRatedPost();
             for ($i = 0; $i < count($popPost); $i++) {
                 ?>
-                <h2><?php echo $popPost[$i][1]?><h5><?php echo "Post Rating ".$popPost[$i][2] ?></h5></h2>
+                <h2><?php echo $popPost[$i][1] ?><h5><?php echo "Post Rating " . $popPost[$i][2] ?></h5></h2>
 
                 <?php
             }
@@ -296,11 +301,32 @@
                     <div class="card">
                         <button onclick="window.location.href = 'admin.php'" style="width:100%;">Admin</button>
                     </div>
+                    <div class="card">
+                        <button onclick="window.location.href = 'login.html'" style="width:100%;">Log
+                            Out
+                        </button>
+                        <?php session_destroy() ?>
+                    </div>
                     <?php
                 } else if ($row['roleName'] == 'Blogger') {
                     ?>
                     <div class="card">
                         <button onclick="window.location.href = 'createPost.html'" style="width:100%;">New</button>
+                    </div>
+                    <div class="card">
+                        <button onclick="window.location.href = 'login.html'" style="width:100%;">Log
+                            Out
+                        </button>
+                        <?php session_destroy() ?>
+                    </div>
+                    <?php
+                } else if ($row['roleName'] != 'Blogger' || 'Admin') {
+                    ?>
+                    <div class="card">
+                        <button onclick="window.location.href = 'login.html'" style="width:100%;">Log
+                            Out
+                        </button>
+                        <?php session_destroy() ?>
                     </div>
                     <?php
                 }

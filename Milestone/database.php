@@ -1,4 +1,11 @@
 <?php
+/**
+ * All files are created and authored by Matt Sievers
+ * File Header added on 7/22/19 6:30 PM
+ * database.php
+ * $projectName
+ */
+
 
 function dbConnect()
 {

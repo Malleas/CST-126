@@ -1,4 +1,18 @@
 <?php
+/**
+ * All files are created and authored by Matt Sievers
+ * File Header added on 7/22/19 6:30 PM
+ * registerHandler.php
+ * $projectName
+ */
+
+/**
+ * All files are created and authored by Matt Sievers
+ * File Header added on 7/22/19 6:29 PM
+ * registerHandler.php
+ * $projectName
+ */
+
 require 'myFuncs.php';
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];

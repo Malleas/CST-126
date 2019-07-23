@@ -1,4 +1,10 @@
-<!--reference for blog template found @ https://www.w3schools.com/howto/howto_css_blog_layout.asp-->
+<!--
+All files authored by Matt Sievers
+Date update 07/22/19
+viewComments.php
+CST-126/Milestone
+reference for blog template found @ https://www.w3schools.com/howto/howto_css_blog_layout.asp
+-->
 <?php
 require_once('utils.php');
 require_once ('database.php');

@@ -1,5 +1,13 @@
 <?php
-require_once ('database.php');
+/**
+ * All files are created and authored by Matt Sievers
+ * File Header added on 7/22/19 6:30 PM
+ * loginHandler.php
+ * $projectName
+ * ref @ https://stackoverflow.com/questions/37120328/how-to-limit-the-number-of-login-attempts-in-a-login-script
+ */
+
+require_once('database.php');
 session_start();
 //assign variables from POST
 $userName = $_POST['userName'];
@@ -25,13 +33,13 @@ $loginQuery = "SELECT * FROM user_info WHERE userName = '$userName'";
 $results = $conn->query($loginQuery);
 $rowCount = mysqli_num_rows($results);
 
-//capture IP for # of attempts.  ref @ https://stackoverflow.com/questions/37120328/how-to-limit-the-number-of-login-attempts-in-a-login-script
+//capture IP for # of attempts.
 mysqli_query($conn, "INSERT INTO ip (ip, timestamp) VALUES ('$ip', CURRENT_TIMESTAMP)");
 $result = mysqli_query($conn, "SELECT COUNT(*) FROM ip WHERE `ip` LIKE '$ip' AND `timestamp` > (now() - interval 10 minute)");
 $count = mysqli_fetch_array($result, MYSQLI_NUM);
 
 // Check to see if password given from POST is the password in the DB
-if($rowCount == 1){
+if ($rowCount == 1) {
     $queryPassword = "SELECT password, userId from user_info WHERE userName = '$userName'";
     $passwordResults = $conn->query($queryPassword);
     //change resource of results to a string value to validate password
@@ -39,17 +47,19 @@ if($rowCount == 1){
     $hash = $row['password'];
     $loginAttempts = 0;
     //Check to see if password given matches, if not 3 attempts al given before error disallowing attempts.
-    if(password_verify($password, $hash)){
+    if (password_verify($password, $hash)) {
         $_SESSION['userId'] = $row['userId'];
-        $_SESSION['userName'] =$userName;
+        $_SESSION['userName'] = $userName;
         header("Location:getContent.php");
         exit;
-    }else if($count[0] <= 3){
+    } else if ($count[0] <= 3) {
         echo "Login failed, please try again <br />";
         echo '<button onclick="window.location.href = \'login.html\'">Try Again</button>';
-    }else if($count[0] > 3){
+    } else if ($count[0] > 3) {
         echo "Your are allowed 3 attempts in 10 minutes";
     }
+} else if ($rowCount == 0) {
+    echo "$userName doesn't exist, please try again.";
 }
 
 //close DB connection

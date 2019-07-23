@@ -1,6 +1,11 @@
+<!--
+All files authored by Matt Sievers
+Date update 07/22/19
+complianceResults.php
+CST-126/Milestone
+reference for blog template found @ https://www.w3schools.com/howto/howto_css_blog_layout.asp
+-->
 
-<!--reference for blog template found @ https://www.w3schools.com/howto/howto_css_blog_layout.asp-->
-<!--reference for tabbed header found @ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tab_header -->
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,3 +1,9 @@
+<!--
+All files authored by Matt Sievers
+Date update 07/22/19
+comment.php
+CST-126/Milestone
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,4 +1,10 @@
-<!--reference for blog template found @ https://www.w3schools.com/howto/howto_css_blog_layout.asp-->
+<!--
+All files authored by Matt Sievers
+Date update 07/22/19
+admin.php
+CST-126/Milestone
+reference for blog template found @ https://www.w3schools.com/howto/howto_css_blog_layout.asp
+-->
 <?php
 require_once('database.php');
 require_once('utils.php');
@@ -71,7 +77,7 @@ require_once('utils.php');
             <button onclick="window.location.href = 'deleteUser.php'" style="width:100%;">Delete User</button>
         </div>
         <div class="card">
-            <button onclick="window.location.href = 'addUser.php'" style="width:100%;">Add User</button>
+            <button onclick="window.location.href = 'userRegistrationPage.html'" style="width:100%;">Add User</button>
         </div>
         <div class="card">
             <button onclick="window.location.href = 'getContent.php'" style="width:100%;">Blog Home</button>

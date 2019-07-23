@@ -1,9 +1,9 @@
 Bugs
-1.  When creating a new user, if all fields are blank, only password check error msg is present on error page.
-    fix.  Moved password check to last in the list and removed all the exits from the other logic checks for required fields.
-2.  btn on admin page for add user wasn't routing to userRegistrationPage.html
-    fix.  Updated the header location to the correct file.
-3.  When a non registered user logs in, they receive a blank page, update to error.
-    fix.  added an else if to the end of the $rowcount for to see if user name exists and password matches.
-4.  No requirements for log out option
-    fix.  Add new btn under admin/new for log out, should destroy the session and redirect back to login.html.
+                                                                                                              1.  When creating a new user, if all fields are blank, only password check error msg is present on error page.
+                                                                                                                  fix.  Moved password check to last in the list and removed all the exits from the other logic checks for required fields.
+                                                                                                              2.  btn on admin page for add user wasn't routing to userRegistrationPage.html
+                                                                                                                  fix.  Updated the header location to the correct file.
+                                                                                                              3.  When a non registered user logs in, they receive a blank page, update to error.
+                                                                                                                  fix.  added an else if to the end of the $rowcount for to see if user name exists and password matches.
+                                                                                                              4.  No requirements for log out option
+                                                                                                                  fix.  Add new btn under admin/new for log out, should destroy the session and redirect back to login.html.

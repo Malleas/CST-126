@@ -1,0 +1,37 @@
+Introduction
+
+Objectives of the project
+The objective of this milestone for CST126 was for me to understand how to build a database driven website.  For this we used MySQL and PHP with a combination of MAMP at first to host it locally and eventually rolling it out to a hosted site on microsoft Azure.
+
+The focus for this class was to really develop the skills to code back end processes to drive front end UI by using PHP to connect to the database and then create the logic to inturpret the queries and display the desired results.
+
+Design Decisions:
+Simple is better.  With the abbriviated time schedule that we have for this online class, the main design decision i made was to keep things simple.  Often times i would come up with some grand design, spin my wheels for a day trying to figure out how to impliment it and fail.  If it took me longer than 24 hours to try to impliment the change, i moved on and redesigned it.  The requirements were pretty lose on what the "thing" was supposed to be, and it just needed to include the required functionality.  That being said here are some of my keep it simple design decisions.
+
+Demo while talking through these:
+
+1.  Reading through the requirements i found a portion of what was required for the user table and possibly a roles table later.  I implimented both and had some issues with designing the roles to update in its table as well as the users table.  Since it was week 1 or so, i decided to forgo the second table and just stick to the single user_info table.  This one table provided all the data i needed till week 6.
+
+2.  Part of the login procedure i did some research on and found a handy how to guide on how to track the IP of the user and prevent number of unsuccessful logins.  I implimented this and set it to 3.  Part of that if/else logic aloud me to introduce some error logging for failed password and no such user found.
+
+3.  In the same week i did some research on upgrading passwrod to be a hex code and using password.verify to validate the password stored in the DB.  this was for security so that the DB wasn't storing true passwords.
+
+4.  I wanted the site to be apealing to the eye and found a handy tutorial on W3Schools that i copied out and used throughout the project.
+
+5.  I wanted the posts to be available on the main page and loaded what is now a very large for loop with all the actions needed for those posts and for each to have its own buttons.  This was probably the most complicated part of the project but once i got it working on admin roles, i migrated it right over to the rest of the roles.
+
+6.  I decided to hide the admin panel in an admin btn that was only visable by, you guessed it, Admins.  All of the actions that an admin could with user mgmt and post mgmt is on one page.  I also decided to mimic how the posts are displayed on the home page here but for posts that had not been approved yet.
+
+7.  Comments were added as a count and a button.  I wanted to again, keep this simple and the functionality still be present.  Clicking on the btn pulls up a new page and the getAllPosts() functionality is present here again like the home and admin page.
+
+8.  The ultimate in keep it simple was the rating system.  Took me a min to figure out how to get the onchange event to work with php but ultimately i wanted to just use something simple and used radio btns.
+
+Limitations:
+Some of the limitations i ran into were more about my own knowledge of the code and less about the requirements.  There are things i wanted to do, but just didn't have the time.  This is present in the workforce with Time, functionality and budget and often gets coding teams in trouble as only tow of those things can change at one time.  In this case it was time and budget.  while there's no persay budget for this class...i still can't change it or the time/deadline.  All i can change is the functionality for an MVP to push to market.
+
+Some of the requirements were also not as clear as they could have been and in a normal environment i would have sent it back to my scrum master for clarification from business on the actual requirement.
+
+Future ideas:
+In the future i would like to add more graphics and art to the site.  I will use it for my hobby to display some of the paintings i'm working on.  I want to add some sort of image locker and i would also like to link up the social media logos to actually go to my social media links.  
+
+I would also like to clean up the theme a little bit and have it match more of my color style for the blog, but we'll see.

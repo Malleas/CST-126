@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b0369f9b-1019-4a02-82c5-40b72291421a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="46e4fff0-831e-4c97-ade5-c02e4a68e434" />
+    </checked>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="/Applications/MAMP" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1jmnCpuOTbBPN4qoQG4McOPWx7l" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT&#10;PHP&#10;HTML" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CST-135" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="copyright.filetypes.PHP" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project Activity/Activity7" />
+      <recent name="C:\Users\xxxfa\Dropbox\GCU Work\CST-126\Project Activity\Activity4" />
+      <recent name="C:\Users\xxxfa\Dropbox\GCU Work\CST-126\Project Activity\Activity3" />
+      <recent name="$PROJECT_DIR$/Project Activity/Activity2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Milestone/punchlists" />
+      <recent name="C:\Users\xxxfa\Dropbox\GCU Work\CST-126\Milestone" />
+      <recent name="$PROJECT_DIR$/Milestone" />
+      <recent name="$PROJECT_DIR$/Project Activity/Activity2/Screenshots" />
+      <recent name="$PROJECT_DIR$/Project Activity/Activity1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.banner.html">
+    <configuration name="banner.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CST-126/banner.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CST-126/Milestone/login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="paypall.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CST-126/paypall.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="userRegistrationPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CST-126/Milestone/Milestone_1/userRegistrationPage.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.banner.html" />
+        <item itemvalue="JavaScript Debug.login.html" />
+        <item itemvalue="JavaScript Debug.paypall.html" />
+        <item itemvalue="PHP Script.scratch.php" />
+        <item itemvalue="JavaScript Debug.userRegistrationPage.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SQLScriptSettings">
+    <option name="matrix">
+      <map>
+        <entry key="MYSQL.CreateComplete" value="CreateIfNotExists=1" />
+      </map>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0369f9b-1019-4a02-82c5-40b72291421a" name="Default Changelist" comment="" />
+      <created>1560215095721</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560215095721</updated>
+      <workItem from="1560215096799" duration="1472000" />
+      <workItem from="1560381482359" duration="17870000" />
+      <workItem from="1560525117950" duration="9462000" />
+      <workItem from="1560538096467" duration="3485000" />
+      <workItem from="1560548629563" duration="12668000" />
+      <workItem from="1560971275887" duration="4293000" />
+      <workItem from="1561338047795" duration="15923000" />
+      <workItem from="1561559102423" duration="3818000" />
+      <workItem from="1561726839276" duration="10072000" />
+      <workItem from="1562104724581" duration="11707000" />
+      <workItem from="1563227850395" duration="17615000" />
+      <workItem from="1563315303419" duration="8138000" />
+      <workItem from="1563831244582" duration="4340000" />
+      <workItem from="1563837535889" duration="5953000" />
+      <workItem from="1574517110230" duration="5629000" />
+      <workItem from="1593469958482" duration="1805000" />
+      <workItem from="1604418015663" duration="322000" />
+      <workItem from="1604588676983" duration="7494000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial Commit for Activity 1 Part 1&#10;&#10;helloWorld.php&#10;Screenshots required.">
+      <created>1560215381869</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560215381869</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added projectURL.txt file for bitbucket address">
+      <created>1560215490386</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560215490386</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added basic syntax quiz completion for T1DQ1">
+      <created>1560217245893</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560217245893</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init commit for milestone 1">
+      <created>1560390084881</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560390084881</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Final commit for MS-1 User Registration Page&#10;&#10;created a createDB.sql file for needed scripts to create tables needed for this milestone.&#10;refactored the userRegistrationPage to flow with the schema for the user_info table.&#10;removed role items as they're un needed for this deliverable. &#10;refactored createUser.php to add logic for required fields as well as the needed logic for nickName per requirements.&#10;Added throw sql conn error to creation of user for better troubleshooting.&#10;removed un needed createDB.php&#10;added folder for Project Reports.">
+      <created>1560562654364</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560562654364</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updated project URL to include the PR for MS1">
+      <created>1560562863483</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1560562863483</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update for Activity 1part 2&#10;&#10;rearagend some folders&#10;screenshots for week 2 DQ's">
+      <created>1560784484873</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1560784484874</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Activity two&#10;&#10;Completion of part 1 and 2 with screenshots">
+      <created>1560810618142</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1560810618142</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updated project URLs to include activity 2 PR url">
+      <created>1560810730837</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560810730837</updated>
+    </task>
+    <task id="LOCAL-00010" summary="composer.json needed for heroku build">
+      <created>1561046404338</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1561046404338</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add index.php to reference index.html">
+      <created>1561055364963</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1561055364963</updated>
+    </task>
+    <task id="LOCAL-00012" summary="updating composer.json to change to public dir">
+      <created>1561055615623</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1561055615623</updated>
+    </task>
+    <task id="LOCAL-00013" summary="updating composer.json to change to public dir">
+      <created>1561056307689</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1561056307689</updated>
+    </task>
+    <task id="LOCAL-00014" summary="updating composer.json to change to public dir">
+      <created>1561056600971</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1561056600971</updated>
+    </task>
+    <task id="LOCAL-00015" summary="updating composer.json to change to public dir">
+      <created>1561056757235</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1561056757235</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Activity 3 assignment&#10;&#10;refactored db connection to repeatable function&#10;updated loginHandler and registerHandler to use new dbConnect() function&#10;created myFuncs file to have repeatable helper functions&#10;Updated login pass/fail to use a php function to send a msg.&#10;added whoAmI to log userId to site.&#10;Screenshots of HW as required.">
+      <created>1561344373420</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1561344373420</updated>
+    </task>
+    <task id="LOCAL-00017" summary="upadted project URL with activity 3 PR URL">
+      <created>1561344432918</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1561344432918</updated>
+    </task>
+    <task id="LOCAL-00018" summary="getContent.php&#10;include stylization into this page to format code to look nice on blog home page.  &#10;query posts DB to get top 3 posts and set them to variables $row# to display them in the blog area.&#10;Repeat titles of blogs in the popular blog area&#10;Add pic in about me&#10;Add follow me FB and Insta logo’s&#10;Add button to create new posts (createPost.html)&#10;createPost.html&#10;Need a text box for title&#10;Need a textarea for blog content&#10;Submit button should submit content, title and &#10;&#10;Create posts DB&#10;Post_id&#10;Post_title&#10;Post_content&#10;Post_date&#10;Update loginHandler.php to redirect upon successful login to getContent.php&#10;Update createUser.php to redirect upon successful completion of new user to login.html.&#10;&#10;createPost.php&#10;take current_datetime and submit to posts db&#10;Create a text parser to ensure a small list of forbidden words are not used in the post.&#10;If no forbidden words are in post, write to posts DB and redirect back to getContent.php.">
+      <created>1561732216898</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1561732216899</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Update to project URL&#10;Added project report&#10;removed procfile as is unneeded for the project">
+      <created>1561732472402</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1561732472402</updated>
+    </task>
+    <task id="LOCAL-00020" summary="removed un needed files">
+      <created>1561740303372</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1561740303372</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Commit for activity 4&#10;&#10;added utility.php for getAllUsers()&#10;updated myFuncs dbConnect to use new Azure DB&#10;updated DB Connections to include Azure&#10;updated project to have it's own DDL &#10;updated the name on the milestone createDb to ddl.sql&#10;created _displayUsers file">
+      <created>1562025481996</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1562025481996</updated>
+    </task>
+    <task id="LOCAL-00022" summary="updating URLs to include Azure and activity 4 PR">
+      <created>1562025588870</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1562025588870</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Milestone 4 Commit - Admin page&#10;&#10;Post Work Cleanup:&#10;create Database.php to house repeatable connection string to azure DB&#10;connect DB local connection to azure&#10;update createPosts, createUsers, getContent and loginHandler to use new dbConnect() function&#10;update the sytling to match blog page for login.html and userRegistrationPage.html.&#10;remove loginFailed.php, it is unused.&#10;remove homePage.html it is unused.&#10;&#10;New Features:&#10;Create getPosts() function, update getContent.php and new admin.php to use it.&#10;&#10;Update getPosts() to only display posts that have been accepted (1).&#10;&#10;Create getUnapprovedPosts().  Need this to query the DB for any posts that have an approved code of 0.&#10;&#10;Post Mgmt. create a page that displays all current posts that are both accepted == false and denied == null.&#10;each post should have an accept and denied btn.&#10;&#10;Update posts DB to include two new fields for accepted or denied posts, accepted defaults to false, denied is blank&#10;&#10;Admin console should have reject and accept buttons.&#10;&#10;reject - update field for post for denied row to true&#10;&#10;accept - update row to true and update denied to false.&#10;&#10;update getContent to check for the flag to be true to display posts.&#10;&#10;Bugs:&#10;Update login screen header.  Currently says User Registration, update to User Login.&#10;&#10;When logging in for the first time you were created with a &quot;there are not posts to display&quot; msg.  This was not ideal as&#10;it required you to navigate manually to createPost.html to have the blog actually display a new post.  updated&#10;getContent.php to redirect to createPost.html if there was nothing in the DB to display for the blog.  This should only&#10;happen if a new DB is build for the posts or it gets deleted.  after first post is made it will always display on the&#10;blog posts.&#10;&#10;New clean up&#10;Popular posts is looping but creating a new Popular post heading each time.  I'd like the posts to stay current in there&#10;without a heading for each one.">
+      <created>1562165339019</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1562165339019</updated>
+    </task>
+    <task id="LOCAL-00024" summary="update project URLs&#10;&#10;Added milestone URL for azure and PR">
+      <created>1562165762128</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1562165762128</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Project Report 4">
+      <created>1562167277402</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1562167277402</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Activity 5&#10;&#10;Simple HTML page to display links and two PHP files that fetched the id and mode of each link.&#10;Screenshots required for assignment&#10;ER Diagram for new Address table&#10;ER Write-up">
+      <created>1562628070544</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1562628070544</updated>
+    </task>
+    <task id="LOCAL-00027" summary="update to project URLs for activity 5">
+      <created>1562628152466</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1562628152466</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Commit for milestone 5&#10;&#10;1.  should only be viewable by admin level&#10;2.  Admin should be able to approve or delete users.  Deleting users needs to update users table userDeleted to &quot;Y&quot;&#10;3.  Admin can ban users.  Update users table for userBanned to &quot;Y&quot;.  User can still view posts but has removed ability&#10;to post (or comment...may be added later).&#10;4.  Add new pages for the admin panel for searchUsers.&#10;5.  Add new pages for the admin panel for updateUser.&#10;6.  Add new pages for the admin panel for deleteUser.&#10;7.  Add new pages for the admin panel for addUser.  This should redirect back to userRegistrationPage.html.&#10;9.  Add functionality to check role name and only display admin button on getContent.php if role = admin&#10;10.  Add a button to the admin pannel to go back to blog home (getContent.php).&#10;11.  Add additional if clause to button viewing to only display &quot;New&quot; if role = blogger.  All buttons should be hidden&#10;if not one of the two roles.">
+      <created>1562766922792</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1562766922792</updated>
+    </task>
+    <task id="LOCAL-00029" summary="update project URL">
+      <created>1562766968718</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1562766968718</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Milestone 6&#10;&#10;Key objectives:&#10;Add ability to update and delete posts based on role&#10;add metrics page to admin panel.&#10;&#10;Post mgmt:&#10;1.  Add update and delete btns to posts, Delete should only be visible by admin, update visible to both admin and blogger.&#10;2.  Delete just removes the blog from the posts DB&#10;3.  Update opens new page.  post_content should be displayed in a textarea and be able to edit the text.  new updates&#10;should update the post_content.&#10;4.  Add new column to posts for updated_date, when a post is updated, this field should be updated instead of post_date.&#10;5.  Update post_date to created_date.&#10;&#10;Admin panel&#10;1.  Add new button for metrics&#10;2.  Display current user qty&#10;3.  Posts per day / month&#10;4.  DB Data stored size.&#10;&#10;Utils&#10;1.  create new gets for getting specific data for metrics on admin panel&#10;&#10;Bug fixes / improvements&#10;1.  Update admin.php.  When approving or denying with multiple posts, it would deny or approve all.  Solved this by&#10;adding a input hidden to capture the ID on the post action.  Also learned to wrap each form input as needed.&#10;2.  Update getContent.php with the same issue as the admin page.  update or deleting posts was affeting them all.  Needed&#10;to pull the logic up and have a &lt;form&gt; wrap each button action.  updated to capture the ID as well.  This way when calling&#10;updatePost.php the id was already in a $_POST variable that i could reuse.">
+      <created>1562795992544</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1562795992544</updated>
+    </task>
+    <task id="LOCAL-00031" summary="update project URL">
+      <created>1562796047714</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1562796047714</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Initial commit for activity 6">
+      <created>1563240664051</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1563240664051</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Final commit for superhero game - Activity 6 part 2">
+      <created>1563297448404</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1563297448404</updated>
+    </task>
+    <task id="LOCAL-00034" summary="update projects URL for activity 6&#10;forgot to add pic of superhero battle resutls to GIT">
+      <created>1563297574171</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1563297574171</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Milestone 7&#10;&#10;Key objectives:&#10;1.  Add search capability to blog to allow users to search current blog posts&#10;&#10;getContent.php&#10;1.  Add search text box&#10;2.  Add search button (wrap the button with a form to search DB)&#10;3.  Search DB title first for any '%search%'&#10;4.  Search post_content for the same search param&#10;5.  Form should open a new &quot;searchResults.php&quot; and display the results&#10;Optional&#10;1.  Display and sort results based on where search criteria was met.  IE display all searches that containe the criteria&#10;in the title together and all the posts that contain it in the content together.&#10;&#10;Roles stipulation:&#10;1.  All users should have the ability to search and read content.&#10;&#10;Additional functionality:&#10;- Add a automated email to inform a user of an rule infraction-&#10;1.  Create a new user using an actual email (use GCU email).&#10;2.  Add new btn to admin page to run the rule.&#10;3.  Rule should look at posts based qty of posts.  If posts is less than 2, email user to ask them to post again.&#10;4.  If no users found, echo results &quot;rule ran, no users found out of compliance.&quot;&#10;5.  Create new file for btn to go to complianceResults.php.&#10;6.  Updates needed to post table to include author name(user name).&#10;&#10;&#10;&#10;Bugs/Refactors&#10;1.  The admin panel buttons should not show their own button on their page, remove said buttons.&#10;2.  With the addition of pushing the user name to createPosts, need to update it to just a php file and drop the html only file.&#10;3.  Move the repeatable functions our from createPost.php to utils for checkProhibitedWords and createPost">
+      <created>1563312376117</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1563312376117</updated>
+    </task>
+    <task id="LOCAL-00036" summary="update to project URL for milestone 7 URL">
+      <created>1563312615269</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1563312615269</updated>
+    </task>
+    <task id="LOCAL-00037" summary="update to project URL for milestone 7 URL">
+      <created>1563313389713</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1563313389713</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Milestone 8&#10;&#10;Key objectives:&#10;1.  Add the ability to rate a post&#10;2.  Add the ability to comment on a post.&#10;3.  Update popular posts to show top 10.&#10;&#10;Update getContent.php&#10;1.  Add comment btn to take user to the comment.php new form&#10;2.  Comments should now appear below the post they belong to.&#10;3.  Add some sort of numerical rating 1-5 (stars maybe)&#10;4.  Add viewComments.php&#10;5.  Add new btn to view comments, btn value should contain the current comment count for that post.&#10;6.  Display avg rate number on post.&#10;7.  update pop posts to display the highest rated posts.&#10;&#10;update posts table&#10;1.  Add FK for postId to postId in comment.&#10;2.  update post_rate to be a float for new avg rate.&#10;&#10;Create comment table&#10;1.  add new post_comments_content to table&#10;2.  add new post_rating and do an average of rates.&#10;3.  add comment date/time&#10;&#10;&#10;Utils&#10;1.  update getPosts to also now return comments as part of the array.&#10;2.  addComment() to update a post with the comment content.&#10;3.  getComments() - retrieve all comments.&#10;4.  getCommentsCount = retrieve comment count to display on view comments button on getContent.php&#10;5.  update updateRate to now update the rate table&#10;6.  update getRate to get avg of rates from teh rate table&#10;7.  Create getHighestRatedPosts() to get the posts with the highest rating to display them for popular posts.&#10;&#10;comments.php&#10;1.  Create new page to allow user to post similar to the rest (update and create).&#10;2.  Title is not needed.&#10;3.  Post should be posted to the comments table with a reference to the originalPostId.&#10;&#10;viewComments.php&#10;1.  Filter and sort the comments based on original PostId.  Display this similar to admin page to approve posts.&#10;2.  Add original post to header for reference&#10;3.  Add blog home btn to return to home page.&#10;&#10;Create rate table&#10;1.  Should have originalPostId (FK), date, rate, ID(PK)&#10;2.  Use this table to get an avg of the rates by postId and update the rate in posts to be that avg amount.">
+      <created>1563379547966</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1563379547966</updated>
+    </task>
+    <task id="LOCAL-00039" summary="update project URL for milestone 8 URL">
+      <created>1563379633348</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1563379633348</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Blogger role update - getContent()&#10;&#10;Forgot to add changes made to see rate and view comments btn to blogger role.&#10;including the release zip and DDL/ER zip">
+      <created>1563380118901</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1563380118901</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Activity 7 commit&#10;&#10;MySQLI vs PDO Research paper&#10;Test plan / results for milestone&#10;update to utility.php to include insertUser()&#10;screenshots for part 1.">
+      <created>1563835115658</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1563835115658</updated>
+    </task>
+    <task id="LOCAL-00042" summary="project URL update.">
+      <created>1563835196838</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1563835196838</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Final milestone review&#10;&#10;added authoring blob on all files.&#10;&#10;Bugs&#10;1.  When creating a new user, if all fields are blank, only password check error msg is present on error page.&#10;    fix.  Moved password check to last in the list and removed all the exits from the other logic checks for required fields.&#10;2.  btn on admin page for add user wasn't routing to userRegistrationPage.html&#10;    fix.  Updated the header location to the correct file.&#10;3.  When a non registered user logs in, they receive a blank page, update to error.&#10;    fix.  added an else if to the end of the $rowcount for to see if user name exists and password matches.&#10;4.  No requirements for log out option&#10;    fix.  Add new btn under admin/new for log out, should destroy the session and redirect back to login.html.">
+      <created>1563840235754</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1563840235754</updated>
+    </task>
+    <task id="LOCAL-00044" summary="update to project URL">
+      <created>1563840298694</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1563840298694</updated>
+    </task>
+    <task id="LOCAL-00045" summary="update to getContent, found a bug with log out button and session.destroy()">
+      <created>1563924689449</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1563924689449</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="removed un needed files" />
+    <MESSAGE value="Commit for activity 4&#10;&#10;added utility.php for getAllUsers()&#10;updated myFuncs dbConnect to use new Azure DB&#10;updated DB Connections to include Azure&#10;updated project to have it's own DDL &#10;updated the name on the milestone createDb to ddl.sql&#10;created _displayUsers file" />
+    <MESSAGE value="updating URLs to include Azure and activity 4 PR" />
+    <MESSAGE value="Milestone 4 Commit - Admin page&#10;&#10;Post Work Cleanup:&#10;create Database.php to house repeatable connection string to azure DB&#10;connect DB local connection to azure&#10;update createPosts, createUsers, getContent and loginHandler to use new dbConnect() function&#10;update the sytling to match blog page for login.html and userRegistrationPage.html.&#10;remove loginFailed.php, it is unused.&#10;remove homePage.html it is unused.&#10;&#10;New Features:&#10;Create getPosts() function, update getContent.php and new admin.php to use it.&#10;&#10;Update getPosts() to only display posts that have been accepted (1).&#10;&#10;Create getUnapprovedPosts().  Need this to query the DB for any posts that have an approved code of 0.&#10;&#10;Post Mgmt. create a page that displays all current posts that are both accepted == false and denied == null.&#10;each post should have an accept and denied btn.&#10;&#10;Update posts DB to include two new fields for accepted or denied posts, accepted defaults to false, denied is blank&#10;&#10;Admin console should have reject and accept buttons.&#10;&#10;reject - update field for post for denied row to true&#10;&#10;accept - update row to true and update denied to false.&#10;&#10;update getContent to check for the flag to be true to display posts.&#10;&#10;Bugs:&#10;Update login screen header.  Currently says User Registration, update to User Login.&#10;&#10;When logging in for the first time you were created with a &quot;there are not posts to display&quot; msg.  This was not ideal as&#10;it required you to navigate manually to createPost.html to have the blog actually display a new post.  updated&#10;getContent.php to redirect to createPost.html if there was nothing in the DB to display for the blog.  This should only&#10;happen if a new DB is build for the posts or it gets deleted.  after first post is made it will always display on the&#10;blog posts.&#10;&#10;New clean up&#10;Popular posts is looping but creating a new Popular post heading each time.  I'd like the posts to stay current in there&#10;without a heading for each one." />
+    <MESSAGE value="update project URLs&#10;&#10;Added milestone URL for azure and PR" />
+    <MESSAGE value="Project Report 4" />
+    <MESSAGE value="Activity 5&#10;&#10;Simple HTML page to display links and two PHP files that fetched the id and mode of each link.&#10;Screenshots required for assignment&#10;ER Diagram for new Address table&#10;ER Write-up" />
+    <MESSAGE value="update to project URLs for activity 5" />
+    <MESSAGE value="Commit for milestone 5&#10;&#10;1.  should only be viewable by admin level&#10;2.  Admin should be able to approve or delete users.  Deleting users needs to update users table userDeleted to &quot;Y&quot;&#10;3.  Admin can ban users.  Update users table for userBanned to &quot;Y&quot;.  User can still view posts but has removed ability&#10;to post (or comment...may be added later).&#10;4.  Add new pages for the admin panel for searchUsers.&#10;5.  Add new pages for the admin panel for updateUser.&#10;6.  Add new pages for the admin panel for deleteUser.&#10;7.  Add new pages for the admin panel for addUser.  This should redirect back to userRegistrationPage.html.&#10;9.  Add functionality to check role name and only display admin button on getContent.php if role = admin&#10;10.  Add a button to the admin pannel to go back to blog home (getContent.php).&#10;11.  Add additional if clause to button viewing to only display &quot;New&quot; if role = blogger.  All buttons should be hidden&#10;if not one of the two roles." />
+    <MESSAGE value="Milestone 6&#10;&#10;Key objectives:&#10;Add ability to update and delete posts based on role&#10;add metrics page to admin panel.&#10;&#10;Post mgmt:&#10;1.  Add update and delete btns to posts, Delete should only be visible by admin, update visible to both admin and blogger.&#10;2.  Delete just removes the blog from the posts DB&#10;3.  Update opens new page.  post_content should be displayed in a textarea and be able to edit the text.  new updates&#10;should update the post_content.&#10;4.  Add new column to posts for updated_date, when a post is updated, this field should be updated instead of post_date.&#10;5.  Update post_date to created_date.&#10;&#10;Admin panel&#10;1.  Add new button for metrics&#10;2.  Display current user qty&#10;3.  Posts per day / month&#10;4.  DB Data stored size.&#10;&#10;Utils&#10;1.  create new gets for getting specific data for metrics on admin panel&#10;&#10;Bug fixes / improvements&#10;1.  Update admin.php.  When approving or denying with multiple posts, it would deny or approve all.  Solved this by&#10;adding a input hidden to capture the ID on the post action.  Also learned to wrap each form input as needed.&#10;2.  Update getContent.php with the same issue as the admin page.  update or deleting posts was affeting them all.  Needed&#10;to pull the logic up and have a &lt;form&gt; wrap each button action.  updated to capture the ID as well.  This way when calling&#10;updatePost.php the id was already in a $_POST variable that i could reuse." />
+    <MESSAGE value="update project URL" />
+    <MESSAGE value="Minor bug fix&#10;&#10;Updated label styling to accomodate for the addition of a * to confirm pass" />
+    <MESSAGE value="Initial commit for activity 6" />
+    <MESSAGE value="Final commit for superhero game - Activity 6 part 2" />
+    <MESSAGE value="update projects URL for activity 6&#10;forgot to add pic of superhero battle resutls to GIT" />
+    <MESSAGE value="Milestone 7&#10;&#10;Key objectives:&#10;1.  Add search capability to blog to allow users to search current blog posts&#10;&#10;getContent.php&#10;1.  Add search text box&#10;2.  Add search button (wrap the button with a form to search DB)&#10;3.  Search DB title first for any '%search%'&#10;4.  Search post_content for the same search param&#10;5.  Form should open a new &quot;searchResults.php&quot; and display the results&#10;Optional&#10;1.  Display and sort results based on where search criteria was met.  IE display all searches that containe the criteria&#10;in the title together and all the posts that contain it in the content together.&#10;&#10;Roles stipulation:&#10;1.  All users should have the ability to search and read content.&#10;&#10;Additional functionality:&#10;- Add a automated email to inform a user of an rule infraction-&#10;1.  Create a new user using an actual email (use GCU email).&#10;2.  Add new btn to admin page to run the rule.&#10;3.  Rule should look at posts based qty of posts.  If posts is less than 2, email user to ask them to post again.&#10;4.  If no users found, echo results &quot;rule ran, no users found out of compliance.&quot;&#10;5.  Create new file for btn to go to complianceResults.php.&#10;6.  Updates needed to post table to include author name(user name).&#10;&#10;&#10;&#10;Bugs/Refactors&#10;1.  The admin panel buttons should not show their own button on their page, remove said buttons.&#10;2.  With the addition of pushing the user name to createPosts, need to update it to just a php file and drop the html only file.&#10;3.  Move the repeatable functions our from createPost.php to utils for checkProhibitedWords and createPost" />
+    <MESSAGE value="update to project URL for milestone 7 URL" />
+    <MESSAGE value="Milestone 8&#10;&#10;Key objectives:&#10;1.  Add the ability to rate a post&#10;2.  Add the ability to comment on a post.&#10;3.  Update popular posts to show top 10.&#10;&#10;Update getContent.php&#10;1.  Add comment btn to take user to the comment.php new form&#10;2.  Comments should now appear below the post they belong to.&#10;3.  Add some sort of numerical rating 1-5 (stars maybe)&#10;4.  Add viewComments.php&#10;5.  Add new btn to view comments, btn value should contain the current comment count for that post.&#10;6.  Display avg rate number on post.&#10;7.  update pop posts to display the highest rated posts.&#10;&#10;update posts table&#10;1.  Add FK for postId to postId in comment.&#10;2.  update post_rate to be a float for new avg rate.&#10;&#10;Create comment table&#10;1.  add new post_comments_content to table&#10;2.  add new post_rating and do an average of rates.&#10;3.  add comment date/time&#10;&#10;&#10;Utils&#10;1.  update getPosts to also now return comments as part of the array.&#10;2.  addComment() to update a post with the comment content.&#10;3.  getComments() - retrieve all comments.&#10;4.  getCommentsCount = retrieve comment count to display on view comments button on getContent.php&#10;5.  update updateRate to now update the rate table&#10;6.  update getRate to get avg of rates from teh rate table&#10;7.  Create getHighestRatedPosts() to get the posts with the highest rating to display them for popular posts.&#10;&#10;comments.php&#10;1.  Create new page to allow user to post similar to the rest (update and create).&#10;2.  Title is not needed.&#10;3.  Post should be posted to the comments table with a reference to the originalPostId.&#10;&#10;viewComments.php&#10;1.  Filter and sort the comments based on original PostId.  Display this similar to admin page to approve posts.&#10;2.  Add original post to header for reference&#10;3.  Add blog home btn to return to home page.&#10;&#10;Create rate table&#10;1.  Should have originalPostId (FK), date, rate, ID(PK)&#10;2.  Use this table to get an avg of the rates by postId and update the rate in posts to be that avg amount." />
+    <MESSAGE value="update project URL for milestone 8 URL" />
+    <MESSAGE value="Blogger role update - getContent()&#10;&#10;Forgot to add changes made to see rate and view comments btn to blogger role.&#10;including the release zip and DDL/ER zip" />
+    <MESSAGE value="Activity 7 commit&#10;&#10;MySQLI vs PDO Research paper&#10;Test plan / results for milestone&#10;update to utility.php to include insertUser()&#10;screenshots for part 1." />
+    <MESSAGE value="project URL update." />
+    <MESSAGE value="Final milestone review&#10;&#10;added authoring blob on all files.&#10;&#10;Bugs&#10;1.  When creating a new user, if all fields are blank, only password check error msg is present on error page.&#10;    fix.  Moved password check to last in the list and removed all the exits from the other logic checks for required fields.&#10;2.  btn on admin page for add user wasn't routing to userRegistrationPage.html&#10;    fix.  Updated the header location to the correct file.&#10;3.  When a non registered user logs in, they receive a blank page, update to error.&#10;    fix.  added an else if to the end of the $rowcount for to see if user name exists and password matches.&#10;4.  No requirements for log out option&#10;    fix.  Add new btn under admin/new for log out, should destroy the session and redirect back to login.html." />
+    <MESSAGE value="update to project URL" />
+    <MESSAGE value="update to getContent, found a bug with log out button and session.destroy()" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to getContent, found a bug with log out button and session.destroy()" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="108" key="CommitChangelistDialog2" timestamp="1604611927681">
+      <screen x="0" y="23" width="1920" height="994" />
+    </state>
+    <state x="440" y="108" key="CommitChangelistDialog2/1920.23.1920.1057/0.23.1920.994@0.23.1920.994" timestamp="1604611927681" />
+    <state x="691" y="409" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604611894571">
+      <screen x="0" y="23" width="1920" height="994" />
+    </state>
+    <state x="691" y="409" key="git4idea.remote.GitConfigureRemotesDialog/1920.23.1920.1057/0.23.1920.994@0.23.1920.994" timestamp="1604611894571" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>Matt Sievers</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
